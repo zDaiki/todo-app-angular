@@ -1,0 +1,1916 @@
+{
+	"info": {
+		"_postman_id": "b27bca23-254a-499d-a68f-22e7bc3e4a8e",
+		"name": "ISmart new project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34347276"
+	},
+	"item": [
+		{
+			"name": "Branch Info",
+			"item": [
+				{
+					"name": "parent branch",
+					"item": [
+						{
+							"name": "view parent branches",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/parent/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"parent",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Parent Branch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"isCorporate\": false,\r\n  \"brAlias\": \"JNP01\",\r\n  \"fullName\": \"Janakpur Main Branch\",\r\n  \"fullNameLocale\": \"जनकपुर मुख्य शाखा\",\r\n  \"shortName\": \"JNP\",\r\n  \"streetName\": \"Ramananda Chowk\",\r\n  \"streetNameLocale\": \"रमणन्द चौक\",\r\n  \"wardNo\": \"9\",\r\n  \"wardNoLocale\": \"९\",\r\n  \"localMnc\": \"Janakpurdham Sub-Metropolitan\",\r\n  \"localMncLocale\": \"जनकपुरधाम उपमहानगरपालिका\",\r\n  \"city\": \"Janakpur\",\r\n  \"cityLocale\": \"जनकपुर\",\r\n  \"district\": \"Dhanusha\",\r\n  \"districtLocale\": \"धनुषा\",\r\n  \"brZone\": \"Madhesh\",\r\n  \"brZoneLocale\": \"मधेश\",\r\n  \"province\": \"Madhesh Province\",\r\n  \"provinceLocale\": \"मधेश प्रदेश\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"45600\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"REG123654\",\r\n  \"regNoLocale\": \"दर्ता १२३६५४\",\r\n  \"regDate\": \"2021-05-15\",\r\n  \"pan\": \"PAN123987\",\r\n  \"panLocale\": \"प्यान १२३९८७\",\r\n  \"phone\": \"041520123\",\r\n  \"phoneLocale\": \"०४१५२०१२३\",\r\n  \"email\": \"jnp.branch@org.com\",\r\n  \"contactPerson\": \"Rajesh Yadav\",\r\n  \"fax\": \"041520124\",\r\n  \"url\": \"https://jnpbranch.org.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BRANCH-JNP-001\",\r\n  \"status\": true,\r\n  \"remarks\": \"Janakpur branch handling eastern operations.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/parent/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"parent",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update parent branch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"isCorporate\": false,\r\n  \"brAlias\": \"JNP01\",\r\n  \"fullName\": \"Janakpurrrrrrr Main Branch\",\r\n  \"fullNameLocale\": \"जनकपुर मुख्य शाखा\",\r\n  \"shortName\": \"JNP\",\r\n  \"streetName\": \"Ramananda Chowk\",\r\n  \"streetNameLocale\": \"रमणन्द चौक\",\r\n  \"wardNo\": \"9\",\r\n  \"wardNoLocale\": \"९\",\r\n  \"localMnc\": \"Janakpurdham Sub-Metropolitan\",\r\n  \"localMncLocale\": \"जनकपुरधाम उपमहानगरपालिका\",\r\n  \"city\": \"Janakpur\",\r\n  \"cityLocale\": \"जनकपुर\",\r\n  \"district\": \"Dhanusha\",\r\n  \"districtLocale\": \"धनुषा\",\r\n  \"brZone\": \"Madhesh\",\r\n  \"brZoneLocale\": \"मधेश\",\r\n  \"province\": \"Madhesh Province\",\r\n  \"provinceLocale\": \"मधेश प्रदेश\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"45600\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"REG123654\",\r\n  \"regNoLocale\": \"दर्ता १२३६५४\",\r\n  \"regDate\": \"2021-05-15\",\r\n  \"pan\": \"PAN123987\",\r\n  \"panLocale\": \"प्यान १२३९८७\",\r\n  \"phone\": \"041520123\",\r\n  \"phoneLocale\": \"०४१५२०१२३\",\r\n  \"email\": \"jnp.branch@org.com\",\r\n  \"contactPerson\": \"Rajesh Yadav\",\r\n  \"fax\": \"041520124\",\r\n  \"url\": \"https://jnpbranch.org.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BRANCH-JNP-001\",\r\n  \"status\": true,\r\n  \"remarks\": \"Janakpur branch handling eastern operations.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/parent/49",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"parent",
+										"49"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete parent branch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/parent/delete/46",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"parent",
+										"delete",
+										"46"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "child branch",
+					"item": [
+						{
+							"name": "view child branches",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/branch/child/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"child",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/branch/child/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"child",
+										"17"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Child Branch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"isCorporate\": true,\r\n  \"parentId\": 49,\r\n  \"brAlias\": \"DRN01\",\r\n  \"fullName\": \"Dharan Corporate Branch\",\r\n  \"fullNameLocale\": \"धरान कर्पोरेट शाखा\",\r\n  \"shortName\": \"DRN\",\r\n  \"streetName\": \"Bhanuchowk\",\r\n  \"streetNameLocale\": \"भानुचोक\",\r\n  \"wardNo\": \"4\",\r\n  \"wardNoLocale\": \"४\",\r\n  \"localMnc\": \"Dharan Sub-Metropolitan City\",\r\n  \"localMncLocale\": \"धरान उपमहानगरपालिका\",\r\n  \"city\": \"Dharan\",\r\n  \"cityLocale\": \"धरान\",\r\n  \"district\": \"Sunsari\",\r\n  \"districtLocale\": \"सुनसरी\",\r\n  \"brZone\": \"Koshi\",\r\n  \"brZoneLocale\": \"कोशी\",\r\n  \"province\": \"Koshi Province\",\r\n  \"provinceLocale\": \"कोशी प्रदेश\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"56700\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"REG112233\",\r\n  \"regNoLocale\": \"दर्ता ११२२३३\",\r\n  \"regDate\": \"2021-01-20\",\r\n  \"pan\": \"PAN112233\",\r\n  \"panLocale\": \"प्यान ११२२३३\",\r\n  \"phone\": \"025520987\",\r\n  \"phoneLocale\": \"०२५५२०९८७\",\r\n  \"email\": \"drn.branch@org.com\",\r\n  \"contactPerson\": \"Krishna Limbu\",\r\n  \"fax\": \"025520988\",\r\n  \"url\": \"https://drnbranch.org.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BRANCH-DRN-001\",\r\n  \"status\": true,\r\n  \"remarks\": \"Corporate branch for eastern development region.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/child/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"child",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update child branch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"isCorporate\": true,\r\n  \"parentId\": 40,\r\n  \"brAlias\": \"DRN01\",\r\n  \"fullName\": \"Dharannn Corporate Branch\",\r\n  \"fullNameLocale\": \"धरान कर्पोरेट शाखा\",\r\n  \"shortName\": \"DRN\",\r\n  \"streetName\": \"Bhanuchowk\",\r\n  \"streetNameLocale\": \"भानुचोक\",\r\n  \"wardNo\": \"4\",\r\n  \"wardNoLocale\": \"४\",\r\n  \"localMnc\": \"Dharan Sub-Metropolitan City\",\r\n  \"localMncLocale\": \"धरान उपमहानगरपालिका\",\r\n  \"city\": \"Dharan\",\r\n  \"cityLocale\": \"धरान\",\r\n  \"district\": \"Sunsari\",\r\n  \"districtLocale\": \"सुनसरी\",\r\n  \"brZone\": \"Koshi\",\r\n  \"brZoneLocale\": \"कोशी\",\r\n  \"province\": \"Koshi Province\",\r\n  \"provinceLocale\": \"कोशी प्रदेश\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"56700\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"REG112233\",\r\n  \"regNoLocale\": \"दर्ता ११२२३३\",\r\n  \"regDate\": \"2021-01-20\",\r\n  \"pan\": \"PAN112233\",\r\n  \"panLocale\": \"प्यान ११२२३३\",\r\n  \"phone\": \"025520987\",\r\n  \"phoneLocale\": \"०२५५२०९८७\",\r\n  \"email\": \"drn.branch@org.com\",\r\n  \"contactPerson\": \"Krishna Limbu\",\r\n  \"fax\": \"025520988\",\r\n  \"url\": \"https://drnbranch.org.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BRANCH-DRN-001\",\r\n  \"status\": true,\r\n  \"remarks\": \"Corporate branch for eastern development region.\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/child/51",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"child",
+										"51"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0NTE4NzYzLCJleHAiOjE3NDQ2MjY3NjN9.soq7PPI1V4wbh4jQh9wZ7eLBTFMy7CjG8El6MVD5Wig",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/branch/child/delete/52",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"branch",
+										"child",
+										"delete",
+										"52"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "View all branch info",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/branch/all/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"branch",
+								"all",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add branch info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Mjc1MjA1LCJleHAiOjE3NDQzODMyMDV9.KSPtZ63LRqV0JpsXoSugqiQoM3htr_9BI2VmQV8-s1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"isCorporate\": false,\r\n  \"parentId\": 46,\r\n  \"brAlias\": \"BKT01\",\r\n  \"fullName\": \"Bhaktapur new Branch\",\r\n  \"fullNameLocale\": \"भक्तपुर नयाँ शाखा\",\r\n  \"shortName\": \"BKT\",\r\n  \"streetName\": \"Suryabinayak\",\r\n  \"streetNameLocale\": \"सुर्यविनायक\",\r\n  \"wardNo\": \"3\",\r\n  \"wardNoLocale\": \"३\",\r\n  \"localMnc\": \"Bhaktapur Municipality\",\r\n  \"localMncLocale\": \"भक्तपुर नगरपालिका\",\r\n  \"city\": \"Bhaktapur\",\r\n  \"cityLocale\": \"भक्तपुर\",\r\n  \"district\": \"Bhaktapur\",\r\n  \"districtLocale\": \"भक्तपुर\",\r\n  \"brZone\": \"Bagmati\",\r\n  \"brZoneLocale\": \"बागमती\",\r\n  \"province\": \"Bagmati Province\",\r\n  \"provinceLocale\": \"बागमती प्रदेश\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"44800\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"REG789123\",\r\n  \"regNoLocale\": \"दर्ता ७८९१२३\",\r\n  \"regDate\": \"2023-03-10\",\r\n  \"pan\": \"PAN789321\",\r\n  \"panLocale\": \"प्यान ७८९३२१\",\r\n  \"phone\": \"016612244\",\r\n  \"phoneLocale\": \"०१६६१२२४४\",\r\n  \"email\": \"bkt.branch@org.com\",\r\n  \"contactPerson\": \"Suresh Tamang\",\r\n  \"fax\": \"016612245\",\r\n  \"url\": \"https://bktbranch.org.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BRANCH-BKT-001\",\r\n  \"status\": true,\r\n  \"remarks\": \"Bhaktapur support branch.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/branch/all/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"branch",
+								"all",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update the branch Info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Mjc1MjA1LCJleHAiOjE3NDQzODMyMDV9.KSPtZ63LRqV0JpsXoSugqiQoM3htr_9BI2VmQV8-s1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isCorporate\": false,\r\n  \"parentId\": 29,\r\n  \"brAlias\": \"BhaktaBr2\",\r\n  \"fullName\": \"Bhaktapur Branch Extension\",\r\n  \"fullNameLocale\": \"भक्तपुर शाखा विस्तार\",\r\n  \"shortName\": \"BB2\",\r\n  \"streetName\": \"Sallaghari\",\r\n  \"streetNameLocale\": \"सल्लाघारी\",\r\n  \"wardNo\": \"3\",\r\n  \"wardNoLocale\": \"३\",\r\n  \"localMnc\": \"Municipality\",\r\n  \"localMncLocale\": \"नगरपालिका\",\r\n  \"city\": \"Bhaktapur\",\r\n  \"cityLocale\": \"भक्तपुर\",\r\n  \"district\": \"Bhaktapur\",\r\n  \"districtLocale\": \"भक्तपुर\",\r\n  \"brZone\": \"Bagmati\",\r\n  \"brZoneLocale\": \"बागमती\",\r\n  \"province\": \"Province 3\",\r\n  \"provinceLocale\": \"प्रदेश ३\",\r\n  \"country\": \"Nepal\",\r\n  \"countryLocale\": \"नेपाल\",\r\n  \"zipCode\": \"44800\",\r\n  \"defCurId\": 1,\r\n  \"regNo\": \"100903\",\r\n  \"regNoLocale\": \"१००९००३\",\r\n  \"regDate\": \"2024-03-01\",\r\n  \"pan\": \"55636779\",\r\n  \"panLocale\": \"५५६३६७७८८९\",\r\n  \"phone\": \"+977-1-3333333\",\r\n  \"phoneLocale\": \"+९७७-१-३३३३३३३\",\r\n  \"email\": \"bhaktapur.ext@company.com\",\r\n  \"contactPerson\": \"Kiran Karki\",\r\n  \"fax\": \"+977-1-3333334\",\r\n  \"url\": \"https://bhaktapur.example.com\",\r\n  \"timeZone\": \"Asia/Kathmandu\",\r\n  \"showLocaleDate\": true,\r\n  \"brKey\": \"BR103\",\r\n  \"status\": true,\r\n  \"remarks\": \"Extension office of Bhaktapur branch.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/branch/all/45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"branch",
+								"all",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Branch by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/branch/delete/all/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"branch",
+								"delete",
+								"all",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Office",
+			"item": [
+				{
+					"name": "View all offices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/office/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"office",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add offices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0MjgwNzk4LCJleHAiOjE3NDQzODg3OTh9.XdwBdKAETITp5zhqdzkiHZha4yvEUoWBvjETH5sGr1M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"branchInfoId\": 15,\r\n  \"officeName\": \"progress Office\",\r\n  \"officeLocale\": \"sमुख्यालय\",\r\n  \"description\": \"progress administrative center\",\r\n  \"status\": true,\r\n  \"remarks\": \"progress office location\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/office/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"office",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update offices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"branchInfoId\": 15,\r\n  \"officeName\": \"tailssss Office\",\r\n  \"officeLocale\": \"मुख्यालय\",\r\n  \"description\": \"Main administrative center\",\r\n  \"status\": true,\r\n  \"remarks\": \"Primary office location\",\r\n  \"insertUserId\": 4,\r\n  \"insertDate\": \"2025-04-03T10:30:00+05:45\",\r\n  \"editUserId\": 5,\r\n  \"editDate\": \"2025-04-04T11:00:00+05:45\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/office/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"office",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete office",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/office/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"office",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login and Signup",
+			"item": [
+				{
+					"name": "LOGIN",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"apsara_bista\",\r\n    \"password\": \"apsara_bistaHash==\"\r\n}\r\n// {\r\n//     \"userName\": \"progress\",\r\n//     \"password\": \"progress\"\r\n// }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1OTE4MzI3LCJleHAiOjE3NDYwMjYzMjd9.K4Dncop6Hr7pSNsm8C9i5GzqYAo9BNPmWurZn-5YJEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"branchId\": 50,\r\n    \"counterId\": 219,\r\n    \"roleId\": 5,\r\n    \"userName\": \"apsara_bista\",\r\n    \"passwordSalt\": \"apsara_bistaSalt==\",\r\n    \"passwordHash\": \"apsara_bistaHash==\",\r\n    \"fullName\": \"Apsara Bista\",\r\n    \"fullNameLocale\": \"अप्सरा बिष्ट\",\r\n    \"address\": \"Nepal\",\r\n    \"genderId\": 2,\r\n    \"primaryContact\": \"9800000219\",\r\n    \"otherContact\": \"9800010219\",\r\n    \"email\": \"apsara_bista@example.com\",\r\n    \"status\": true,\r\n    \"deactiveDate\": null,\r\n    \"remarks\": \"Staff\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login from server",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create user from server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://meeting.devanasoft.com.np/",
+							"protocol": "https",
+							"host": [
+								"meeting",
+								"devanasoft",
+								"com",
+								"np"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "View Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "Super Menu",
+					"item": [
+						{
+							"name": "add new super Menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"menuAlias\": \"MTG\",\r\n    \"menuName\": \"Meetings\",\r\n    \"version\": \"v1\",\r\n    \"menuNameOther\": \"बैठकहरू\",\r\n    \"menuUrl\": \"/meetings\",\r\n    \"menuController\": \"MeetingController\",\r\n    \"menuAction\": \"list\",\r\n    \"displayIndex\": 2,\r\n    \"faCode\": \"fa-meeting\",\r\n    \"remarks\": \"Meeting Management\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/menu/supermenu/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"supermenu",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view Super Menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/supermenu/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"supermenu",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update super menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"menuAlias\": \"MTGG\",\r\n    \"menuName\": \"Meetings\",\r\n    \"version\": \"v1\",\r\n    \"menuNameOther\": \"बैठकहरू\",\r\n    \"menuUrl\": \"/meetings\",\r\n    \"menuController\": \"MeetingController\",\r\n    \"menuAction\": \"list\",\r\n    \"displayIndex\": 2,\r\n    \"faCode\": \"fa-meeting\",\r\n    \"remarks\": \"Meeting Management\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/menu/supermenu/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"supermenu",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete whole super menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/supermenu/delete/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"supermenu",
+										"delete",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view super menu by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/supermenu/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"supermenu",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sub Menu",
+					"item": [
+						{
+							"name": "add new Sub Menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n  {\r\n    \"menuAlias\": \"ATND\",\r\n    \"menuName\": \"Attendance\",\r\n    \"version\": \"v1\",\r\n    \"menuNameOther\": \"उपस्थिती\",\r\n    \"menuUrl\": \"/meetings/attendance\",\r\n    \"menuController\": \"AttendanceController\",\r\n    \"menuAction\": \"mark\",\r\n    \"displayIndex\": 2,\r\n    \"faCode\": \"fa-check\",\r\n    \"remarks\": \"Mark Attendance\",\r\n    \"parentMenuId\": 9\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/menu/submenu/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"submenu",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Sub Menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/submenu/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"submenu",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update sub menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"menuAlias\": \"ATNDDD\",\r\n    \"menuName\": \"Attendance\",\r\n    \"version\": \"v1\",\r\n    \"menuNameOther\": \"उपस्थिती\",\r\n    \"menuUrl\": \"/meetings/attendance\",\r\n    \"menuController\": \"AttendanceController\",\r\n    \"menuAction\": \"mark\",\r\n    \"displayIndex\": 2,\r\n    \"faCode\": \"fa-check\",\r\n    \"remarks\": \"Mark Attendance\",\r\n    \"parentMenuId\": 6\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9040/api/menu/submenu/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"submenu",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete sub menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/submenu/delete/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"submenu",
+										"delete",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view sub menu by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0Nzk1NDI3LCJleHAiOjE3NDQ5MDM0Mjd9.iNECrBkhDvrXSxH-jecFrSj-JsdrjUKCDJHtLuR2n9E",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9040/api/menu/submenu/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9040",
+									"path": [
+										"api",
+										"menu",
+										"submenu",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Some other test",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "Dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Committee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0ODY4MDM2LCJleHAiOjE3NDQ5NzYwMzZ9.-qfpmWhk9jDyTC5PbJmsdVKeJAK8nLmpITe2n7Rj2zY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/dashboard/committees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"dashboard",
+								"committees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check By Period",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0ODY4MDM2LCJleHAiOjE3NDQ5NzYwMzZ9.-qfpmWhk9jDyTC5PbJmsdVKeJAK8nLmpITe2n7Rj2zY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/dashboard/meetings/yeaR",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"dashboard",
+								"meetings",
+								"yeaR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view Member Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0ODY4MDM2LCJleHAiOjE3NDQ5NzYwMzZ9.-qfpmWhk9jDyTC5PbJmsdVKeJAK8nLmpITe2n7Rj2zY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/dashboard/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"dashboard",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view attendance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ0ODY4MDM2LCJleHAiOjE3NDQ5NzYwMzZ9.-qfpmWhk9jDyTC5PbJmsdVKeJAK8nLmpITe2n7Rj2zY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/dashboard/attendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"dashboard",
+								"attendance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Depart",
+			"item": [
+				{
+					"name": "View all Department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/depart/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"depart",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1MTQxMjkwLCJleHAiOjE3NDUyNDkyOTB9.leKMOnhKouNWo4tMsXwRUsmIH6UlKzrH3jwcltwhGpo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departName\": \"ग्राहक सेवा\",\r\n    \"departLocale\": \"Customer Service\",\r\n    \"description\": \"Provides support and assistance to customers.\",\r\n    \"status\": true,\r\n    \"remarks\": \"Chat support launched recently.\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/depart/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"depart",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1MTQxMjkwLCJleHAiOjE3NDUyNDkyOTB9.leKMOnhKouNWo4tMsXwRUsmIH6UlKzrH3jwcltwhGpo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departName\": \"ग्राहक सेवा\",\r\n    \"departLocale\": \"Customer Service\",\r\n    \"description\": \"Provides support and assistance to customers.\",\r\n    \"status\": true,\r\n    \"remarks\": \"Chat support launched recently.\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/depart/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"depart",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1MTQxMjkwLCJleHAiOjE3NDUyNDkyOTB9.leKMOnhKouNWo4tMsXwRUsmIH6UlKzrH3jwcltwhGpo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/depart/delete/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"depart",
+								"delete",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comittee",
+			"item": [
+				{
+					"name": "view all comittee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/commitee/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"commitee",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Commitee  Type",
+			"item": [
+				{
+					"name": "view all comittee type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/commiteetype/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"commiteetype",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meet Attendance",
+			"item": [
+				{
+					"name": "view all meet Attandace",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/meet-attendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"meet-attendance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add meet Attendance by meet manager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1OTQ1MTY3LCJleHAiOjE3NDYwNTMxNjd9.0Pp6grgY7bOOIUBchMz5d5wrtILXGdmZWlG9sQ2ZKcU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"meetId\": 39,\r\n    \"mintMemberId\": 42\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/meet-attendance/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"meet-attendance",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auto Attendance to the selected meeting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjQ3LCJzdWIiOiJhcHNhcmFfYmlzdGEiLCJpYXQiOjE3NDU5NTA2ODcsImV4cCI6MTc0NjA1ODY4N30.N8reV68hr8Hgd7Y8BnsjNM1b-UgFf92Xx8f8QsRqnJI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"remarks\": \"Auto Attendance is completed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/api/meetminut/autoAttendance/45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"meetminut",
+								"autoAttendance",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meet Minut",
+			"item": [
+				{
+					"name": "View all meet minut",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/meetminut",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"meetminut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View all the meetings minute where user/member is expected",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjQ3LCJzdWIiOiJhcHNhcmFfYmlzdGEiLCJpYXQiOjE3NDU5OTc2OTMsImV4cCI6MTc0NjEwNTY5M30.MG9oHywNsR7xVXS7lLvhACfvzx8DQ1qD3SuhqqAxp7c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/meetminut/viewForMember",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"meetminut",
+								"viewForMember"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Member",
+			"item": [
+				{
+					"name": "View all members",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Member With a User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1OTE4MzI3LCJleHAiOjE3NDYwMjYzMjd9.K4Dncop6Hr7pSNsm8C9i5GzqYAo9BNPmWurZn-5YJEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"genderId\": 1,\r\n  \"memTypeId\": 1,\r\n  \"mintDepartId\": \"DPT001\",\r\n  \"mintMemDegId\": \"MDG001\",\r\n  \"ethnicityId\": 3,\r\n  \"isBackwardClass\": true,\r\n  \"officeName\": \"Central Office\",\r\n  \"description\": \"New member for 2025\",\r\n  \"status\": true,\r\n  \"remarks\": \"Appointed for meeting committee\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/members/create/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"members",
+								"create",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Member Degree",
+			"item": [
+				{
+					"name": "View all members degree",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/memdeg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"memdeg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Member type",
+			"item": [
+				{
+					"name": "View all member types",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/memtypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"memtypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Minut Type",
+			"item": [
+				{
+					"name": "View all Minut Types",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjcsInN1YiI6InByb2dyZXNzIiwiaWF0IjoxNzQ1ODk5NTA0LCJleHAiOjE3NDYwMDc1MDR9.sU7C_fZ6XjduT1tXti3FzF62Xs3gv4TjrU5yfJe-wwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9040/api/minuttype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"api",
+								"minuttype"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsInN1YiI6ImFkbWluIiwiaWF0IjoxNzQ2MzU3MTQ0LCJleHAiOjE3NDY0NjUxNDR9.EoJZ1d9qSG_wpAuwqVezUgE2al1WOqPvJRpSrCzVL_E",
+			"type": "default"
+		}
+	]
+}
